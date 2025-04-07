@@ -160,7 +160,7 @@ async def handle_link_from_moderator(update: Update, context: ContextTypes.DEFAU
     if user_id:
         await context.bot.send_message(
             chat_id=user_id,
-            text=f"📬 Ссылка от модератора:\n👉 {update.message.text}"
+            text=f"📬 Сообщение от модератора:\n👉 {update.message.text}"
         )
 
 async def handle_unstructured_client_msg(update: Update, context: ContextTypes.DEFAULT_TYPE):
